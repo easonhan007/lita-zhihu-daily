@@ -29,7 +29,7 @@ module Lita
         posts = []
         doc = ::Nokogiri::HTML(html)
         doc.css('#js-explore-tab .question_link').each do |post|
-          posts << "*#{post.text.strip}*: (http://www.zhihu.com/#{post[:href]})"
+          posts << "*#{post.text.strip}*: (http://www.zhihu.com#{post[:href]})"
         end
         posts.join("\n")
       end
