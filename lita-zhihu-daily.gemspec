@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["nbkhic@qq.com"]
   spec.description   = "Get zhihu daily/monthly hot posts"
   spec.summary       = "Get zhihu daily/monthly hot posts"
-  spec.homepage      = "TODO: Add a homepage"
+  spec.homepage      = "https://github.com/easonhan007/lita-zhihu-daily"
   spec.license       = "MIT"
   spec.metadata      = { "lita_plugin_type" => "handler" }
 
@@ -15,6 +15,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "lita", ">= 4.6"
+  spec.add_runtime_dependency "nokogiri"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "pry-byebug"
